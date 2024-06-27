@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_Name": {
+      "type": "string"
+    },
+    "product_Description": {
+      "type": "blocks"
+    },
+    "product_Price": {
+      "type": "decimal"
+    },
+    "product_Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "product_Category": {
+      "type": "enumeration",
+      "enum": [
+        "Clothes",
+        "electronics",
+        "Foods"
+      ]
+    }
+  }
+}
