@@ -39,6 +39,12 @@
         "electronics",
         "Foods"
       ]
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "products"
     }
   }
 }
